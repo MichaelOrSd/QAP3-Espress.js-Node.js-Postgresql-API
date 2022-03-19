@@ -1,0 +1,54 @@
+/* 
+
+1. how many hours?
+18Mar - 1600-1800
+19Mar - 
+
+2. what online resources are available?
+
+3. Friends asked?
+
+4. Instructors asked?
+
+5. Rate the difficulty:
+
+Complete the following tasks:
+
+1. I choose option C). 
+c)	As the owner of dvdrental I would like to have a web page 
+so I can view the top ten rental films by rental dollars earned 
+for a particular store. (Rating n/a)
+
+2. The tables required are;
+
+payment table - 
+payment_id, customer_id, staff_id, rental_id, amount, payment_date.
+
+rental table - 
+rental_id, inventory_id, customer_id,
+
+store table - 
+store_id, manager_staff_id, address_id, last_update
+
+film table -
+film_id, title, 
+
+inventory table - 
+inventory_id, film_id, store_id, last_update.
+
+
+
+
+f.film_id = i.film_id => i.inventory_id = r.inventory_id
+=> r.rental_id = p.rental_id ===> amount 
+
+film rental quantity/times
+
+
+
+
+amount + (rental_rate * rental_duration)
+3.99 + (.99 * 6) = 9.93 + tax ???
+
+
+
