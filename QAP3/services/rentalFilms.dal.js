@@ -1,4 +1,4 @@
-const dal = require('/db');
+const dal = require('./db');
 
 let getRentalFilms = () => {
 	return new Promise(function (resolve, reject) {

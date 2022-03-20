@@ -1,4 +1,4 @@
-const dal = require('/db');
+const dal = require('./db');
 
 const getStores = () => {
 	return new Promise(function (reslove, reject) {

@@ -21,13 +21,13 @@ app.listen(PORT, () => {
 app.set('view engine', 'ejs');
 
 const storesRouter = require('./routes/stores');
-const languagesRouter = require('./routes/languages');
-const aboutRouter = require('./routes/about');
+// const languagesRouter = require('./routes/languages');
+// const aboutRouter = require('./routes/about');
 const rentalFilms = require('./routes/rentalFilms');
 
 app.use('/stores', storesRouter);
-app.use('/languages', languagesRouter);
-app.use('/about', aboutRouter);
+// app.use('/languages', languagesRouter);
+// app.use('/about', aboutRouter);
 app.use('/rentalFilms', rentalFilms);
 
 app.use((req, res) => {
