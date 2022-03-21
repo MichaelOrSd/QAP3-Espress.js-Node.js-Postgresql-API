@@ -39,11 +39,11 @@ const getFilmRevenueByStoreId = (id) => {
 	});
 };
 
-const getFilmRevenueBySotreIdFilm = (id, name) => {
+const getFilmRevenueByStoreIdFilm = (id, title) => {
 	return new Promise(function (resolve, reject) {
 		const sql = 'SELECT * FROM vw_rental_films_by_dollars_earned \
       WHERE store_id = $1 AND name = $2 LIMIT 10';
-		dal.query(sql, [id, name], (err, result) => {
+		dal.query(sql, [id, title], (err, result) => {
 			if (err) {
 				reject(err);
 			} else {
@@ -57,5 +57,5 @@ module.exports = {
 	getStores,
 	getStoreById,
 	getFilmRevenueByStoreId,
-	getFilmRevenueBySotreIdFilm,
+	getFilmRevenueByStoreIdFilm,
 };
