@@ -3,6 +3,8 @@ const router = express.Router();
 
 router.use(express.static('public'));
 
-res.render('home.ejs', {});
+router.get('/', async (req, res) => {
+	res.render('home.ejs');
+});
 
 module.exports = router;
