@@ -20,15 +20,17 @@ app.listen(PORT, () => {
 
 app.set('view engine', 'ejs');
 
+// const homeRouter = require('./routes/home');
 const storesRouter = require('./routes/stores');
 // const languagesRouter = require('./routes/languages');
 // const aboutRouter = require('./routes/about');
-const rentalFilms = require('./routes/rentalFilms');
+// const rentalFilms = require('./routes/rentalFilms');
 
+// app.use('/home', homeRouter);
 app.use('/stores', storesRouter);
 // app.use('/languages', languagesRouter);
 // app.use('/about', aboutRouter);
-app.use('/rentalFilms', rentalFilms);
+// app.use('/rentalFilms', rentalFilms);
 
 app.use((req, res) => {
 	res.status(404).render('404');

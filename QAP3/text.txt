@@ -1,16 +1,25 @@
 /* 
 
 1. how many hours?
-18Mar - 1600-1800
-19Mar - 
+    18Mar - 1700-1800 (1hr)
+    20Mar - 1200-1600 (4hrs)
+    21Mar - 1800-2200 (4hrs)
+    22Mar - 1200-1300 (1hr)
+                Total:(10hrs)
 
 2. what online resources are available?
+    W3S, stack overflow.
 
 3. Friends asked?
+    I asked Nicholas, and Tyler for help. 
 
 4. Instructors asked?
+    I ask Peter for help regarding file creation and SQL statement.
 
-5. Rate the difficulty:
+5. Rate the difficulty: 
+    See (Rating) below.
+
+-------------------------------------------------------------------------------
 
 Complete the following tasks:
 
@@ -20,35 +29,43 @@ so I can view the top ten rental films by rental dollars earned
 for a particular store. (Rating n/a)
 
 2. The tables required are;
-
 payment table - 
 payment_id, customer_id, staff_id, rental_id, amount, payment_date.
-
 rental table - 
 rental_id, inventory_id, customer_id,
-
 store table - 
 store_id, manager_staff_id, address_id, last_update
-
 film table -
 film_id, title, 
-
 inventory table - 
-inventory_id, film_id, store_id, last_update.
+inventory_id, film_id, store_id, last_update. (Rating 3/10)
+
+3. Create a SELECT statement (Rating 2/10)
+
+4. Created a new view; included in the SQL folder. (Rating 2/10)
+
+5. QAP3 folder (Rating 1/10)
+
+6. Save all (Rating 1/10)
+
+7. Build a simple REST API (8/10)
+    Mostly because I've never worked with EJS view engine and ejs files......
+
+8. Node.js and ejs files (Rating 8/10)
+
+9. Node app on localhost (Rating 2/10)
+
+10. Save files. (Rating 1/10)
+
+-------------------------------------------------------------------------------
 
 
 
 
-f.film_id = i.film_id => i.inventory_id = r.inventory_id
-=> r.rental_id = p.rental_id ===> amount 
-
-film rental quantity/times
 
 
 
 
-amount + (rental_rate * rental_duration)
-3.99 + (.99 * 6) = 9.93 + tax ???
 
 
 

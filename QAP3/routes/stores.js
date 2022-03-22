@@ -35,7 +35,7 @@ router.get('/:id', async (req, res) => {
 
 	if (store.length === 0) res.render('norecord');
 	else {
-		res.render('storedetails.ejs', { store, revenue, rentalFilms, rentalFilms: req.query.rentalFilms });
+		res.render('storedetails.ejs', { store, revenue, rentalFilms /*rentalFilms: req.query.rentalFilms*/ });
 	}
 });
 

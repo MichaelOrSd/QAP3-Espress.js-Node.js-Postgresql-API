@@ -13,28 +13,13 @@
                     phone: <%= store.phone%> 
                 </p> 
             <% } %>
-            <div class="dropdown">
-            </br>Best earners by Store and film(s):</br> 
-                <button class="dropbtn">film</button>
-                <div class="dropdown-content">
-                    <% if (rentalFilms.length > 0) { %>
-                        <% rentalFilms.forEach(film => { %> 
-                            <% if (film.title === 'All') { %>
-                                <a href="<%= store.store_id%>"><%= film.title %></a>
-                            <% } else { %>
-                                <a href="?film=<%= film.title %>"><%= film.title %></a>
-                            <% } %>
-                        <% }) %>
-                    <% } %>
-                </div>
-            </div>
             <div class="revenue content">
                 <% if (revenue.length > 0) { %>
-                    <b><%= film%></b>
+                    <b> Films </b>
                     <% revenue.forEach(rev => { %>
                         <p class="films">
                             <%= rev.title%>, <%= rev.monies%>
-                            <% if (film === undefined) { %> - <%= rev.name %> <% }; %>
+                            <% if (rev.title === undefined) { %> - <%= rev.name %> <% }; %>
                         </p> 
                     <% }) %>
                 <% } %>

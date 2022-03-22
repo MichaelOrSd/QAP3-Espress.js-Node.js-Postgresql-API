@@ -6,8 +6,10 @@ router.use(express.static('public'));
 const rentalFilmsDal = require('../services/rentalFilms.dal');
 
 router.get('/', async (req, res) => {
+	console.log('Here is the get request');
 	console.log(req.method);
 	let rentalFilms = await rentalFilmsDal.getRentalFilms();
+	console.log(rentalFilms);
 	if (rentalFilms.length === 0) {
 		res.render('norecord');
 	} else {
