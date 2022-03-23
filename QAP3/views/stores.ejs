@@ -4,6 +4,8 @@
 		<%- include('./partials/nav.ejs') %>
 		<div class="stores_content">
 			<h2>Our locations</h2>
+			<img src="/media/map.png" alt="Our stores" />
+			<br />
 			<% if (stores.length > 0) { %> <% stores.forEach(store => { %>
 			<p class="store">
 				<b><a href="<%= store.store_id %>"><%= store.store_name %></a></b> - <%= store.address%>, <%= store.city%>, <%= store.country%> <%= store.postal_code%>
