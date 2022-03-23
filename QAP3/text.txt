@@ -4,8 +4,8 @@
     18Mar - 1700-1800 (1hr)
     20Mar - 1200-1600 (4hrs)
     21Mar - 1800-2200 (4hrs)
-    22Mar - 1200-1300 (1hr)
-                Total:(10hrs)
+    22Mar - 1200-1300 (2hrs)
+                Total:(11hrs)
 
 2. what online resources are available?
     W3S, stack overflow.
